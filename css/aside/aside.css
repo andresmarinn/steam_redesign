@@ -1,0 +1,151 @@
+aside {
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vmin;
+  padding: 1.5%;
+}
+
+.aside-logo {
+  width: 100%;
+  height: 5.5vh;
+  display: flex;
+  align-items: flex-start;
+}
+.aside-logo #aside-logo {
+  width: auto;
+  height: 100%;
+  color: #fff;
+}
+
+.aside-menu {
+  width: 100%;
+  height: 92.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-menu .aside-options,
+.aside-menu .aside-other-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5vmin;
+}
+.aside-menu .aside-options .aside-option,
+.aside-menu .aside-other-options .aside-option {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 3vmin;
+  display: flex;
+  align-items: center;
+  gap: 2.25vmin;
+  cursor: pointer;
+  position: relative;
+}
+.aside-menu .aside-options .aside-option .aside-option-icon,
+.aside-menu .aside-other-options .aside-option .aside-option-icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.aside-menu .aside-options .aside-option .aside-option-icon svg,
+.aside-menu .aside-other-options .aside-option .aside-option-icon svg {
+  width: 3vmin;
+  height: 3vmin;
+  color: rgba(255, 255, 255, 0.25);
+  position: relative;
+  transition-duration: 0.35s;
+}
+.aside-menu .aside-options .aside-option .aside-option-icon::before,
+.aside-menu .aside-other-options .aside-option .aside-option-icon::before {
+  content: "";
+  width: 0.85vmax;
+  height: 0.85vmax;
+  background-color: #ff6b27;
+  box-shadow: 2px 0 4.5px 2.5px rgba(255, 107, 39, 0.3333333333);
+  border-radius: 50%;
+  transition-duration: 0.35s;
+  filter: blur(5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.aside-menu .aside-options .aside-option span,
+.aside-menu .aside-other-options .aside-option span {
+  font-size: 0.85vmax;
+  color: #fff;
+  white-space: nowrap;
+  font-weight: 500;
+  transition-duration: 0.35s;
+}
+.aside-menu .aside-options .aside-option::before,
+.aside-menu .aside-other-options .aside-option::before {
+  content: "";
+  width: 0.35vmax;
+  height: 100%;
+  background-color: #ff6b27;
+  box-shadow: 2px 0 4.5px 2.5px rgba(255, 107, 39, 0.3333333333);
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-duration: 0.35s;
+  opacity: 0;
+}
+.aside-menu .aside-options .aside-option:hover::before,
+.aside-menu .aside-other-options .aside-option:hover::before {
+  transition-duration: 0.35s;
+  opacity: 1;
+}
+.aside-menu .aside-options .aside-option:hover .aside-option-icon::before,
+.aside-menu .aside-other-options .aside-option:hover .aside-option-icon::before {
+  opacity: 0.6;
+  transition-duration: 0.35s;
+}
+.aside-menu .aside-options .aside-option:hover span,
+.aside-menu .aside-other-options .aside-option:hover span {
+  color: #ff6b27;
+  font-weight: bold;
+  transition-duration: 0.35s;
+}
+.aside-menu .aside-options .aside-option:hover svg,
+.aside-menu .aside-other-options .aside-option:hover svg {
+  color: rgba(255, 255, 255, 0.45);
+  transition-duration: 0.35s;
+}
+.aside-menu .aside-other-options {
+  margin-bottom: -20vmin;
+}
+
+.aside-chat {
+  width: 100%;
+  aspect-ratio: 1/0.75;
+  border-radius: 2.5vmin;
+  background: linear-gradient(90deg, rgba(47, 50, 61, 0.25) 0%, rgb(47, 50, 61) 100%);
+  padding: 0.35vmin;
+  cursor: pointer;
+}
+.aside-chat .aside-chat-container {
+  width: 100%;
+  height: 100%;
+  background-color: #161B27;
+  display: flex;
+  align-items: center;
+  border-radius: 2.5vmin;
+  padding: 2.5vmin;
+}
+.aside-chat .aside-chat-container span {
+  font-size: 1vmax;
+  color: #fff;
+  font-weight: 100;
+}
+.aside-chat .aside-chat-container svg {
+  width: 4.5vmin;
+  height: 4.5vmin;
+  color: #fff;
+}/*# sourceMappingURL=aside.css.map */

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+@import "./header/header.css";
+@import "./aside/aside.css";
+@import "./games/games.css";
+
+* {
+	font-family: "Outfit", sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	background-color: #141415;
+	padding-left: 8.5%;
+	padding-right: 8.5%;
+	overflow: hidden;
+}
+
+.blur-gradient:nth-of-type(1) {
+	width: 70%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	filter: blur(100px);
+	background: #df0409;
+	opacity: 0.15;
+	z-index: -1;
+}
+
+.blur-gradient:nth-of-type(2) {
+	width: 50%;
+	aspect-ratio: 1/ 1;
+	border-radius: 50%;
+	bottom: -65%;
+	left: -5%;
+	border-radius: 50%;
+	filter: blur(100px);
+	background-color: #031d58;
+	opacity: 0.15;
+	position: fixed;
+	z-index: -1;
+}
+
+.blur-gradient:nth-of-type(3) {
+	width: 40%;
+	aspect-ratio: 1/ 1;
+	border-radius: 50%;
+	position: fixed;
+	bottom: -35%;
+	right: -15%;
+	border-radius: 50%;
+	filter: blur(100px);
+	background-color: #0435a6;
+	opacity: 0.15;
+	z-index: -1;
+}
