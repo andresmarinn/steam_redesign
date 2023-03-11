@@ -1,4 +1,4 @@
-# Steam | Desktop Redisgn
+# Steam | Desktop Redesign
 
 ![DeviceView](./assets/media/device-view.png)
 
